@@ -1,10 +1,6 @@
 #include "iter.hpp"
 #include <iostream>
 
-char rot(char a){
-	return (a + 1);
-}
-
 int main() {
 	char string[11];
 	string[0] = 'H';
@@ -23,7 +19,7 @@ int main() {
 		std::cout << string[i];
 	}
 	std::cout << std::endl;
-	iter(string,11,rot);
+	iter(string,11,op);
 	for (int i = 0; i < 11; ++i) {
 		std::cout << string[i];
 	}
